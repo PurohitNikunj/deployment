@@ -9,7 +9,7 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
+# Use postgres as the database for Active Record
 gem "pg"
 
 # Use the Puma web server [https://github.com/puma/puma]
@@ -72,3 +72,4 @@ group :test do
 end
 
 gem 'sidekiq'
+gem 'pry'
