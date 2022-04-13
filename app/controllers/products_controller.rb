@@ -52,6 +52,7 @@ class ProductsController < ApplicationController
     @product.destroy
 
     respond_to do |format|
+      PractiseJob.perform_in(1.minutes,@product)
       format.html { redirect_to products_url, notice: "Product was successfully destroyed." }
       format.json { head :no_content }
     end
